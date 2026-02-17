@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Pressure Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Blood Pressure Timer</h1>
+            <p>起立試験スマートタイマー</p>
+        </header>
+
+        <main class="timer-card">
+            <div class="timer-display" id="timer">00:00</div>
+
+            <div class="status-indicators">
+                <div class="indicator" id="ind-1m">
+                    <span class="dot"></span> 1分
+                </div>
+                <div class="indicator" id="ind-2m">
+                    <span class="dot"></span> 2分
+                </div>
+                <div class="indicator" id="ind-5m">
+                    <span class="dot"></span> 5分
+                </div>
+            </div>
+
+            <button id="toggleBtn" class="btn-primary">
+                <span class="icon">▶</span> スタート
+            </button>
+            <button id="resetBtn" class="btn-secondary" disabled>
+                リセット
+            </button>
+
+            <div class="message-area" id="messageArea">
+                準備ができたらスタートを押してください
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
